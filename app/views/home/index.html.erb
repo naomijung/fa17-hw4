@@ -1,0 +1,38 @@
+<h1>
+  Rails Decal HW 4
+</h1>
+
+<h2>
+  Users
+</h2>
+
+<ol>
+  <%= @users.each do |user| %>
+    <li> Username: <%= user.username %>
+    <br> Email: <%= user.email %> </li>
+    <br>
+  <% end %>
+</ol>
+
+<h2>
+  Cats
+</h2>
+
+<ol>
+  <%= @cats.each do |cat| %>
+    <li> Name: <%= cat.name %> </li>
+    <br>
+  <% end %>
+</ol>
+
+<h2>
+  Todos
+</h2>
+
+<ol>
+  <%= @todos.each do |todo| %>
+    <li> Tasks: <%= todo.tasks %>
+    <br> Finished? <%= todo.finished %> </li>
+    <br>
+  <% end %>
+</ol>
